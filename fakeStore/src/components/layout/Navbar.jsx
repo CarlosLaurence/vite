@@ -1,29 +1,30 @@
 import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
+    const activeStyle = "underline underline-offset-8";
   return (
     <nav className='flex justify-between items-center fixed z-10 top-0 w-full py-5 px-8 text-sm font-light'>
         <ul className='flex items-center gap-3'>
             <li className='font-semibold text-lg'>
-                <NavLink to="/">Shopi</NavLink>
+                <NavLink to="/" className={({isActive}) => isActive ? activeStyle : undefined }>Shopi</NavLink>
             </li>
-            <li className='font-semibold text-lg'>
-                <NavLink to="/dfgj">All</NavLink>
+            <li>
+                <NavLink to="/sdasd" className={({isActive}) => isActive ? activeStyle : undefined }>All</NavLink>
             </li>
-            <li className='font-semibold text-lg'>
-                <NavLink to="/dfgdf">Clothes</NavLink>
+            <li>
+                <NavLink to="/dfs" className={({isActive}) => isActive ? activeStyle : undefined }>Clothes</NavLink>
             </li>
-            <li className='font-semibold text-lg'>
-                <NavLink to="/fdghdfhd">Electronics</NavLink>
+            <li>
+                <NavLink to="/d" className={({isActive}) => isActive ? activeStyle : undefined }>Electronics</NavLink>
             </li>
-            <li className='font-semibold text-lg'>
-                <NavLink to="/sadasf">Furnitures</NavLink>
+            <li>
+                <NavLink to="/f" className={({isActive}) => isActive ? activeStyle : undefined }>Furnitures</NavLink>
             </li>
-            <li className='font-semibold text-lg'>
-                <NavLink>Toys</NavLink>
+            <li>
+                <NavLink to="/a" className={({isActive}) => isActive ? activeStyle : undefined }>Toys</NavLink>
             </li>
-            <li className='font-semibold text-lg'>
-                <NavLink>Other</NavLink>
+            <li>
+                <NavLink to="/s" className={({isActive}) => isActive ? activeStyle : undefined }>Other</NavLink>
             </li>
         </ul>
         <ul className='flex items-center gap-3'>
@@ -37,7 +38,7 @@ export default function Navbar() {
                 <NavLink>My Account</NavLink>
             </li>
             <li className='font-semibold text-lg'>
-                <NavLink>Sing In</NavLink>
+                <NavLink>Sign In</NavLink>
             </li>
             <li className='font-semibold text-lg'>
                 <NavLink></NavLink>
