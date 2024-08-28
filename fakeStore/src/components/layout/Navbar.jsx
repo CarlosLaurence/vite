@@ -31,19 +31,11 @@ export default function Navbar() {
                 <NavLink to="/s" className={({isActive}) => isActive ? activeStyle : undefined }>Other</NavLink>
             </li>
         </ul>
-        <ul className='flex items-center gap-3'>
-            <li className='font-semibold text-lg'>
-                <NavLink>My order</NavLink>
-            </li>
-            <li className='font-semibold text-lg'>
-                <NavLink>My Orders</NavLink>
-            </li>
-            <li className='font-semibold text-lg'>
-                <NavLink>My Account</NavLink>
-            </li>
-            <li className='font-semibold text-lg'>
-                <NavLink>Sign In</NavLink>
-            </li>
+        <ul className="flex items-center gap-3">
+            <li className="text-black/60">carlos.erunez@uabc.com</li>
+            <li><NavLink to="/my-orders" className={({isActive}) => isActive ? activeStyle : undefined }>My Orders</NavLink></li>
+            <li><NavLink to="/my-account" className={({isActive}) => isActive ? activeStyle : undefined }>My Account</NavLink></li>
+            <li><NavLink to="/sign-in" className={({isActive}) => isActive ? activeStyle : undefined }>Sign In</NavLink></li>
             <li className='flex justify-center items-center'>
                 <ShoppingBagIcon className='size-6'/>
                 <div>{context.cartProducts.length}</div>

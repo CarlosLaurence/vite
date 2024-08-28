@@ -10,6 +10,7 @@ export const ShopiProvider = ({ children }) => {
     const [isCheckOutOpen, setIsCheckOutOpen] = useState(false);
     const [productToShow, setProductToShow] = useState({});
     const [cartProducts, setCartProducts] = useState([]);
+    const [orders, setOrders] = useState([]);
 
     const openDetailProduct = () => {
       setIsProductDetailOpen(true);
@@ -43,7 +44,9 @@ export const ShopiProvider = ({ children }) => {
         productToShow,
         setProductToShow,
         cartProducts,
-        setCartProducts
+        setCartProducts,
+        orders,
+        setOrders
     }}>{children}</ShopiContext.Provider>
   )
 }
