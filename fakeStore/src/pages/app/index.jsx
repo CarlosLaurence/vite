@@ -7,8 +7,6 @@ import { ShopiProvider } from '../../components/context';
 import CheckOutSideMenu from '../../components/utilidades/CheckOutSideMenu';
 import AppRoutes from '../../components/layout/AppRoutes';
 
-
-
 export default function App() {
   return (
     <ShopiProvider>
